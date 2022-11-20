@@ -1,0 +1,1 @@
+#kameradan aldığım framleri kaydetme
