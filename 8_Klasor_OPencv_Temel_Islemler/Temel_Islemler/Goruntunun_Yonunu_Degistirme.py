@@ -6,9 +6,12 @@ row,col=img.shape
 
 
 #iki boyutta yön değiştirmwe işlemi uygulandı.
-M=cv2.getRotationMatrix2D((col/3,row/2),188,-1)
+M=cv2.getRotationMatrix2D((col/3,row/2),135,-1)#resim döndürme kırpma
+                        #((satır,dütun),açı değeri,)
+
 
 dst=cv2.warpAffine(img,M,(col,row))
+cv2.imshow("original",img)
 
 cv2.imshow("dst Halasinin Guzusu",dst)
 cv2.waitKey(0)

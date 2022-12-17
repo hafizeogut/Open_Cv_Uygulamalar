@@ -22,9 +22,9 @@ for i in range(len(contours)):
 #print(hull)
 #0,1,2,3,4,5
 
-
-"""
 cv2.imshow("orijinal",img)
+"""
+
 cv2.imshow("gray",gray)
 cv2.imshow("blur",blur)
 cv2.imshow("thresh",thresh)

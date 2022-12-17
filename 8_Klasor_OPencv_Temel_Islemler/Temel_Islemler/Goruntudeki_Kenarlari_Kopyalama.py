@@ -5,8 +5,8 @@ cap=cv2.VideoCapture(0)
 
 while 1:
     ret,frame=cap.read()
-    frame=cv2.flip(frame,1)#görüntüyü takla attırıyor,
-    #1 girildiğinde y eksenine göre görüntünün tersini veriyor
+    frame=cv2.flip(frame,1)#görüntüyü takla attırıldı.
+    #1 girildiğinde y eksenine göre görüntünün tersini veriliyor
     
     edges=cv2.Canny(frame,100,200)#kenarlık cizdiriliyor.
     cv2.imshow("frame",frame)

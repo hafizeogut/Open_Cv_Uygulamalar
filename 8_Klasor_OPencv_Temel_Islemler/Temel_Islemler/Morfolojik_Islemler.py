@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-
+# Morfolojik(şekilbilimsel) işlemler binary resimler üzerinde çalışır
 img=cv2.imread("C:\\OpenCV\\OpenCv_Uygulamar_1\\Src\\yavrucuklarim.jpg",0)
 img=cv2.resize(img,(590,400))
 

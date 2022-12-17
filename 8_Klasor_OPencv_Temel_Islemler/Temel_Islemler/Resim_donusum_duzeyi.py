@@ -8,7 +8,7 @@ row,col=img.shape
 M = np.float32([[1,0,150],[0,1,150]])#float 32 ?
 
 dst=cv2.warpAffine(img,M,(row,col))
-
+cv2.imshow("image",img)
 cv2.imshow("dst",dst)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

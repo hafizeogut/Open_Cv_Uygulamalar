@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 img=cv2.imread("C:\\OpenCV\\OpenCv_Uygulamar_1\\Src\\Kizlarim.jpg")
 #img=np.zeros((500,500),np.uint8)+50#tuval oluşturuldu
 b,g,r=cv2.split(img)
-plt.hist(b.ravel(),256,[0,256])
+plt.hist(b.ravel(),256,[0,256])#ravel()çok boyutlu dizi tek boyutlu dizi haline getirildi.
 plt.hist(g.ravel(),256,[0,256])
 plt.hist(r.ravel(),256,[0,256])
 

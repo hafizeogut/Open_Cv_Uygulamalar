@@ -1,12 +1,12 @@
 #roi region of interest:ilgi alanı
 import cv2
 
-img=cv2.imread("Beyzam.jpg")
+img=cv2.imread("C:\\Open_Cv_Uygulamalar\\Src\\Guzum.jpg")
 print(img.shape[:2])#resmin şekli en ve boy :kanal boyutu alınmadı
 
-roi=img[30:200,200:400]#belli kordinatlarda ilgi alanı oluşturuldu
+roi=img[20:350,350:400]#belli kordinatlarda ilgi alanı oluşturuldu
        #[   y  , x     ]
-cv2.imshow("Beyzam:30.10.2022",img)
+cv2.imshow("Guzum",img)
 cv2.imshow("ROI",roi)
 
 

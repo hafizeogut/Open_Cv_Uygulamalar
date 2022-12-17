@@ -1,10 +1,10 @@
 import cv2
 
-capture=cv2.VideoCapture(0)#kamera sayısına göre değer alır 1 kamera daha olsa 0 değil 1 yazacaktım
+capture=cv2.VideoCapture(0)#kamera sayısına göre değer alır 1 kamera daha olsa 0 değil 1 yazılırdı
 
 #Video_File_Output=video dosyası çıktısı
-#fileName="C:\Users\HafizeOgut\Desktop\Goruntu_Isleme\Video_Kaydetme\H.avi"
-fileName="H.mp4"
+#fileName="C:\\Users\\HafizeOgut\\Desktop\\Goruntu_Isleme\\Video_Kaydetme\\H.avi"
+fileName="C:\\Open_Cv_Uygulamalar\\Output\\H.mp4"
 codec=cv2.VideoWriter_fourcc(*'VXID')#Medya verilerindeki kodekleri 4 adet karakterle tanımlar 
 
 frameRate=30#kare Hızı

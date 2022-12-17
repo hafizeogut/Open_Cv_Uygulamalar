@@ -21,7 +21,7 @@ img [0,1]=(255,255,200)
 img [0,2]=(255,255,150)
 img [0,3]=(255,255,170)
 """
-img=cv2.resize(img,(1000,1000),interpolation=cv2.INTER_AREA)
+img=cv2.resize(img,(1000,1000),interpolation=cv2.INTER_AREA)#INTER_AREA iç alan
 
 cv2.imshow("Canvas",img)
 cv2.waitKey(0)

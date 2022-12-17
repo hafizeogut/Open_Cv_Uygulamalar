@@ -2,10 +2,10 @@ import cv2
 
 import numpy as np
 
-#numPy fonksiyonlarını kulanarak bir tuval oluşturuluyor.
+#numPy kütüphanesinin fonksiyonları kullanılarak bir tuval oluşturuluyor.
 #canvas:tuval
 canvas=np.zeros((512,512,3),dtype=np.uint8)+255#zeros() fonksiyonu için belilirli bir alanı tuval oluşturuluyor.
-#zeros((boy boyutu,en boyutu,kanal:Renkli görüntü:BGR),çizim yaptığımızda kullanılan veri tipi)+matrise eklenen 255 
+#zeros((boy boyutu,en boyutu,kanal:Renkli görüntü:BGR),çizim yapıldığında kullanılan veri tipi)+matrise eklenen 255 
 ##print(canvas) 
 
 
