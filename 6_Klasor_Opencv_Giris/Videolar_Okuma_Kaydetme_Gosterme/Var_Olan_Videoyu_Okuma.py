@@ -1,9 +1,9 @@
 import cv2
 
 #capture=video yakalama
-capture=cv2.VideoCapture("antalya.mp4")#Girdiğim parametrelere göre Kameramdan mı görüntü alacağız yoksa,Kayıtlı bir videodan mı onun kararını veriyoruz.
+capture=cv2.VideoCapture("antalya.mp4")#Girilen parametrelere göre Kameradan mı görüntü alınacak yoksa kayıtlı bir videodan mı onun kararını veriliyor.
 
-while True:#videolardan devamlı olarak  kare okuma ve gösterme
+while True:#videolardan devamlı olarak  kare okuyıp ve gösterme.
 
     ret,frame=capture.read()
     #videolardaki kareleri okuma
@@ -24,5 +24,5 @@ while True:#videolardan devamlı olarak  kare okuma ve gösterme
     if cv2.waitKey(10) &0xFF==ord("q"):# q tuşuna basıldığında çıkış sağlandı.
         break
 
-capture.release()#video dosyası üzerindeki işlemi fonksiyonu 
+capture.release()#video dosyası üzerindeki işlemi  release() fonksiyonu 
 cv2.destroyAllWindows()

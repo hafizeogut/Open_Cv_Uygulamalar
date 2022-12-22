@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 #img=np.zeros((10,10,3),np.uint8)# 3 Kanal  Verisi:BGR
-# Renkli Görüntü oluşturmsk için
+# Renkli Görüntü oluşturmak için
 
 
 

@@ -6,12 +6,12 @@ def resize_with_Aspect_Ratio(img,width=None,height=None,inter=cv2.INTER_AREA):
     dimension=None #dimension=boyut
     (h,w)=img.shape[:2]#resimlerin boyutlarına ulaşmak istiyoruz.Baştan ikinciye kadar
      
-    if width is None and height is None:# eğer resmin en ve boy değerleri girilmez ise alınan resmi döndür
+    if width is None and height is None:# eğer resmin en ve boy değerleri girilmez ise alınan resmi döndür.
         return img
 
-    if width is None :# En değeri girilmesse: boyut hesabı
-        r=height/float(h)#float şeçmemin sebebi hassas hesaplama yapmam
-        dimension=(int(w*r),height)#yeni boyut
+    if width is None :# En değeri girilmesse: boyut hesabı.
+        r=height/float(h)#float şeçmemin sebebi hassas hesaplama yapılmasıdır.
+        dimension=(int(w*r),height)#yeni boyut oluşturuldu.
 
     else:#sadece boy değeri verilirse
         r=width/float(w)

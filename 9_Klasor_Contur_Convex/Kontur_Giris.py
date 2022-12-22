@@ -19,9 +19,16 @@ gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)#resmin gri tonlara çevrilme işlemi y
 
 ret,tresh=cv2.threshold(gray,12,255,cv2.THRESH_BINARY)#ya siyah ya beyaz
 contours,_=cv2.findContours(tresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)#fonksiyonum iki değer alır
-#print(counours) bulunan kordinatlar yazdırıldı
+                            #(tresh ,yapılan kontur bulma işlemini daha doğru bulma için kullanılan iki parametre)
+#print(counours)#sözlük:Görüntülerin olduğu bir sözlük. 
+# bulunan kordinatlar yazdırıldı
 
 cv2.drawContours(img,contours,-1,(0,0,255),3)
+                #(resim,kullanılacak kordinatlar,-1,renkk,kalınlık) 
+                                            #-1 ,0,1 değeri alır
+#cv2.drawContours(img,contours,1,(0,0,255),3) şeklin etrafını çizer
+#-1 hem şeklin hem çereçevenin
+#0 sadece çerçevenin etrafını çizer
 
 cv2.imshow("contour",img)
 cv2.waitKey(0)

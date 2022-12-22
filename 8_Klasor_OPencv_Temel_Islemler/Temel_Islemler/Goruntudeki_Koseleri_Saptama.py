@@ -13,7 +13,7 @@ corners=cv2.goodFeaturesToTrack(gray,500,0.08,10)
 corners=np.int0(corners)#çember çizerken float veri tipi kullanılmaz
 
 for corner in corners:
-    x,y=corner.ravel()
+    x,y=corner.ravel()#çok boyutlu dizi tek boyutlu dizi haline getirildi.
     cv2.circle(img1,(x,y),3,(0,0,255),-1)
     
 

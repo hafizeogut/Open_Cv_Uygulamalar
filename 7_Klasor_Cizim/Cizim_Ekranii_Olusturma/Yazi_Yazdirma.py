@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 
-canvas=np.zeros((600,600,3),dtype=np.uint8)+255
+canvas=np.zeros((600,600,3),dtype=np.uint8)+255#yazı yazılacak bir zemin oluşturukldu
 
 font1=cv2.FONT_HERSHEY_COMPLEX_SMALL
 font2=cv2.FONT_HERSHEY_COMPLEX

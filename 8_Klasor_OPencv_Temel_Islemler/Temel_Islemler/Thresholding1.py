@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-img=cv2.imread('C:\\Open_Cv_Uygulamalar\\Src\\Kizlarim.jpg',4)
+img=cv2.imread('C:\\Open_Cv_Uygulamalar\\Src\\Kizlarim.jpg',0)
                 #(gri tonlamalı bir görüntü olması gereken kaynak görüntüdür,piksel değeri min,piksel değeri max,eşikleme işlemi)
 ret,thresh1=cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 

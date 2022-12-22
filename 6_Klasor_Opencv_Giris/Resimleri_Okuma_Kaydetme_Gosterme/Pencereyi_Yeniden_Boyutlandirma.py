@@ -1,4 +1,5 @@
 import cv2
+#resimler uint8 veri tipine sahiptir
 
 #cv2.namedWindow("Klon",cv2.WINDOW_NORMAL)#WINDIW_NORMAL ile boyutlandırma yaptık
 

@@ -9,7 +9,7 @@ def nothing(x):
     pass
 
 cv2.namedWindow("Trackbar")
-cv2.resizeWindow("Trackbar",500,500)#trakbarın boyuları oluşturuldu
+cv2.resizeWindow("Trackbar",400,400)#trakbarın boyuları oluşturuldu
 #Lower: Alt değerler
 #resize: frame ve görüntüleri yeniden boyutlandırm
 
@@ -30,10 +30,10 @@ cv2.setTrackbarPos("Upper - S","Trackbar",255)
 cv2.setTrackbarPos("Upper - V","Trackbar",255)
 
 while True:
-    ret,frame=capture.read()#kameradan alınan görüntü okundu
-    frame=cv2.flip(frame,1)#görüntünün y eksen,ne göre yansıması alındı
+    ret,frame=capture.read()#kameradan alınan görüntü okundu.
+    frame=cv2.flip(frame,1)#görüntünün y eksenine göre yansıması alındı.
 
-    frame_hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)#alınan frameler Hsv formatına çevrildi
+    frame_hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)#alınan frameler Hsv formatına çevrildi.
     #üst kızaklar oluşturuluyor
     Lower_H=cv2.getTrackbarPos("Lower - H","Trackbar")
     Lower_S=cv2.getTrackbarPos("Lower - S","Trackbar")

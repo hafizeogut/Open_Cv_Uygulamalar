@@ -4,12 +4,17 @@ import numpy as np
 img1=cv2.imread("C:\\OpenCV\\OpenCv_Uygulamar_1\\Src\\bitwise_1.png")
 img2=cv2.imread("C:\\OpenCV\\OpenCv_Uygulamar_1\\Src\\bitwise_2.png")
 
-#resimler uint8 veri tipine sahiptir.
-img3=cv2.imread('C:\\Open_Cv_Uygulamalar\\Src\\Kizlarim.jpg')
-img4=cv2.imread('C:\\Open_Cv_Uygulamalar\\Src\\lokumum.jpg')
-dst=cv2.addWeighted(img3,0.7,img4,0.3,0)
+#resimler uint8 veri tipine sahiptir. 
+dst=cv2.addWeighted(img1,0.7,img2,0.3,0)#-->görüntüleri birbiri üzerine ağırlıkları ile eklemeişlemi yapıldı
+
+
 #bit düzeyinde ve işlemleri
 #img 1 ve img 2 kıyaslaması yapıldı.
+#cv2.bitwise_and() : Karşılaştırılan her iki pikselde sıfırdan büyükse “True” döner.
+#cv2.bitwise_or() : Karşılaştırılan piksellerden biri veya her ikisi de sıfırdan büyükse “True” döner.
+#cv2.bitwise_xor() : Karşılaştırılan her iki pikselden sadece biri sıfırdan büyükse “True” döner.
+#cv2.bitwise_not() : Söz konusu resimdeki piksellerin “değilini” yani tersini alır.
+
 bit_and=cv2.bitwise_and(img2,img1)
 
 #bitler üzerinde or işlemi yapılıyor.

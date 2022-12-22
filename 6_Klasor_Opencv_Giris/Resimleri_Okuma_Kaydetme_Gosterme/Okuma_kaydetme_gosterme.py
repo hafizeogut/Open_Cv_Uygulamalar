@@ -13,7 +13,8 @@ cv2.imshow("img",img)#(resmimin gösterileceği pencerenin adı,resmin tutulduğ
 
 cv2.imwrite("C:\\Open_Cv_Uygulamalar\\Output\\K1.jpg",img)#resim kaydetme işlemi
 #resmi istenilen herhangi bir yere kaydetmek istersem dosya yolu belirtmem gerekir
+#cv2.imwrite(yeni ad,resmin tutulduğu değişken)
 
-cv2.waitKey(0)#bu fonksiyon girilen değer kadar ekranda tutulur mili/saniye
+cv2.waitKey(0)#bu fonksiyon girilen değer kadar ekranda tutulur mili/saniye 1 Milisaniye = 0.001 Saniye
 
 cv2.destroyAllWindows()#tüm pencereleri kapatmak adına önemlidir
